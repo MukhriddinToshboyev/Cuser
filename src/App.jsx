@@ -6,10 +6,12 @@ import Navbar from "./navbar";
 function App() {
   // const [user, setUser] = useState([]);
   return (
-    <div className="App">
-      <Footer />
-      <h1>salom</h1>
+    <div className="Container">
       <Navbar />
+      <main>
+        <h1>Welcome to the App Component</h1>
+      </main>
+      <Footer />
     </div>
   );
 }
