@@ -1,4 +1,7 @@
 .Footer-container {
-  background-color: #222;
-  height: 60px;
+  background-color: #f3eded;
+  height: 3.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

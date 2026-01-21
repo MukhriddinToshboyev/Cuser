@@ -10,6 +10,17 @@
   min-height: 100vh;
 }
 
-main {
-  flex: 1;
+.main {
+  /* padding: 20px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  font-size: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.09;
 }
