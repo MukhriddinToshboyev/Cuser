@@ -26,6 +26,7 @@ function App() {
         </div>
         <Users users={user} HandleClick={HandleClick} />
       </main>
+      {user.length === 0 && <button className="creat-user">Create User</button>}
       <Footer />
     </div>
   );
