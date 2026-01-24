@@ -14,6 +14,9 @@ function App() {
     { id: 3, name: "Charlie" },
   ]);
 
+  const HandleClick = (id) => {
+    setUser(user.filter((user) => user.id !== id));
+  };
   return (
     <div className="Container">
       <Navbar user={user} />
@@ -21,7 +24,7 @@ function App() {
         <div className="text">
           {user.length === 0 && <h2>No users available.</h2>}
         </div>
-        <Users users={user} />
+        <Users users={user} HandleClick={HandleClick} />
       </main>
       <Footer />
     </div>

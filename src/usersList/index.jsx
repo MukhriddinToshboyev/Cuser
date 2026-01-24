@@ -1,12 +1,18 @@
 import "./style.css";
 
-function Users({ users }) {
+function Users({ users, HandleClick }) {
   return (
     <div className="userList">
       {users.map((user) => {
         return (
           <div key={user.id} className="user-card">
-            <h2>{user.name}</h2>
+            <p className="userText">{user.name}</p>
+            {/* <p className="userText">{user.email}</p>
+            <p className="userText">{user.phone}</p>
+            <p className="userText">{user.website}</p>
+            <p className="userText">{user.company.name}</p>
+            <p className="userText">{user.address.city}</p> */}
+            <button onClick={() => HandleClick(user.id)}>Delete</button>
           </div>
         );
       })}
