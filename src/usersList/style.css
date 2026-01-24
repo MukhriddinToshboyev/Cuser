@@ -8,6 +8,7 @@
 }
 
 .user-card {
+  display: flex;
   border: 1px solid #ccc;
   padding: 15px;
   border-radius: 8px;
