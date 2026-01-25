@@ -5,6 +5,7 @@ import { useState } from "react";
 import Users from "./usersList";
 
 function App() {
+  const [showModal, setShowModal] = useState(false);
   const [user, setUser] = useState([
     {
       id: 1,
@@ -14,7 +15,7 @@ function App() {
     { id: 3, name: "Charlie" },
   ]);
 
-  const HandleClick = (id) => {
+  const deleteUser = (id) => {
     setUser(user.filter((user) => user.id !== id));
   };
   return (
@@ -24,9 +25,9 @@ function App() {
         <div className="text">
           {user.length === 0 && <h2>No users available.</h2>}
         </div>
-        <Users users={user} HandleClick={HandleClick} />
+        <Users users={user} deleteUser={deleteUser} />
       </main>
-      {user.length === 0 && <button className="creat-user">Create User</button>}
+      <button className="creat-user">Create User</button>
       <Footer />
     </div>
   );
