@@ -27,7 +27,8 @@ function App() {
         </div>
         <Users users={user} deleteUser={deleteUser} />
       </main>
-      {showModal && <newUser />}
+
+      {/* {showModal && } */}
       <button onClick={() => setShowModal(true)} className="creat-user">
         Create User
       </button>
