@@ -7,21 +7,30 @@ import NewUser from "./newUser";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
-  const [user, setUser] = useState([
-    {
-      id: 1,
-      name: "Alice",
-    },
-    { id: 2, name: "Bob" },
-    { id: 3, name: "Charlie" },
-  ]);
+  const [user, setUser] = useState([]);
 
   const deleteUser = (id) => {
     setUser(user.filter((user) => user.id !== id));
   };
-
+  const Close = (e) => {
+    console.log(e);
+  };
+  const closeModal = (e) => {
+    if (e.target.className === "modalContainer") {
+      setShowModal(false);
+    }
+  };
+  const closess = (e) => {
+    if (e.key === "Escape") {
+      setShowModal(false);
+    }
+  };
   return (
-    <div className="Container">
+    <div
+      onClick={(e) => closeModal(e)}
+      onKeyDown={(e) => closess(e)}
+      className="App"
+    >
       <Navbar user={user} />
       <main className="main">
         <div className="text">

@@ -3,7 +3,7 @@
   margin: 0;
 }
 
-.Container {
+.App {
   display: flex;
   overflow: hidden;
   flex-direction: column;
