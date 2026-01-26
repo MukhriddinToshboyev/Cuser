@@ -3,6 +3,7 @@ import Footer from "./footer";
 import Navbar from "./navbar";
 import { useState } from "react";
 import Users from "./usersList";
+import NewUser from "./newUser";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -27,8 +28,7 @@ function App() {
         </div>
         <Users users={user} deleteUser={deleteUser} />
       </main>
-
-      {/* {showModal && } */}
+      {showModal && <NewUser />}
       <button onClick={() => setShowModal(true)} className="creat-user">
         Create User
       </button>

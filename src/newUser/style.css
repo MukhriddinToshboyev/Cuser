@@ -1,1 +1,25 @@
+.newUserContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6); /* fonni xiralashtirish */
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.newUserForm {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  width: 25rem;
+  max-width: 90%;
+}
