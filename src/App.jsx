@@ -16,19 +16,14 @@ function App() {
     console.log(e);
   };
   const closeModal = (e) => {
-    if (e.target.className === "modalContainer") {
-      setShowModal(false);
-    }
+    if (e.target.className === "modalContainer") setShowModal(false);
+    if (e.key === "Escape") setShowModal(false);
   };
-  const closess = (e) => {
-    if (e.key === "Escape") {
-      setShowModal(false);
-    }
-  };
+
   return (
     <div
       onClick={(e) => closeModal(e)}
-      onKeyDown={(e) => closess(e)}
+      onKeyDown={(e) => closeModal(e)}
       className="App"
     >
       <Navbar user={user} />
