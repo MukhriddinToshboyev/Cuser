@@ -1,6 +1,6 @@
 .Navbar-container {
   color: blue;
-  height: 5rem;
+  height: 4rem;
   width: 100%;
   border-bottom: 1px solid #ccc;
   display: flex;
@@ -8,7 +8,7 @@
   justify-content: center;
 }
 
-h1 {
+.Navbar-title {
   width: 50%;
   text-align: center;
   display: flex;
