@@ -12,7 +12,7 @@
 }
 
 .modal {
-  width: 15rem;
+  width: 17rem;
   height: 30rem;
   display: flex;
   flex-direction: column;
@@ -20,7 +20,6 @@
   align-items: center;
   background: #fff;
   padding: 1.5rem;
-  gap: 1.5rem;
   border-radius: 0.8rem;
 }
 
@@ -49,7 +48,10 @@
 }
 
 .modal-btn {
-  padding: 0.7rem;
+  margin-left: 3rem;
+  width: 6rem;
+  height: 2rem;
+  align-items: center;
   background-color: red;
   color: white;
   border: none;
