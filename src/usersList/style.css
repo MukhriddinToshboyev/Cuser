@@ -6,7 +6,7 @@
   padding: 20px; /* Ichki padding */
 }
 
-.user-card {
+.userCard {
   flex-direction: column;
   width: 300px;
   height: 300px;
@@ -16,4 +16,23 @@
   border-radius: 8px;
   background-color: #f9f9f9;
   text-align: center;
+  align-items: center;
+}
+
+.userCard img {
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.userCardDelete {
+  margin-top: auto;
+  padding: 0.5rem 1.5rem;
+  background-color: rgb(128, 45, 44);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
