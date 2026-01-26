@@ -1,34 +1,33 @@
 .userList {
   display: flex;
-  flex-direction: column;
-  gap: 10px; /* Kartalar orasidagi masofa */
-  max-width: 600px; /* Maksimal kenglik, markazlash uchun */
-  padding: 20px; /* Ichki padding */
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.3rem;
+  padding: 1.3rem;
 }
 
 .userCard {
-  flex-direction: column;
-  width: 300px;
-  height: 300px;
-  display: flex;
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 8px;
-  background-color: #f9f9f9;
+  width: 12.5rem;
+  height: 19rem;
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 20px rgba(91, 22, 22, 0.08);
   text-align: center;
-  align-items: center;
 }
 
 .userCard img {
-  width: 9rem;
-  height: 9rem;
+  width: 8.5rem;
+  height: 8.5rem;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
 }
 
 .userCardDelete {
-  margin-top: auto;
+  margin-top: 1rem;
   padding: 0.5rem 1.5rem;
   background-color: rgb(128, 45, 44);
   color: white;
