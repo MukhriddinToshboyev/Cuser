@@ -10,7 +10,7 @@ function Users({ users, deleteUser }) {
             <h3>
               {user.firstName} {user.lastName}
             </h3>
-            <p>Age: {user.age}</p>
+            <p>{user.age} age</p>
             <p>From: {user.from}</p>
             <p>Job: {user.job}</p>
             <p>gender: {user.gender}</p>

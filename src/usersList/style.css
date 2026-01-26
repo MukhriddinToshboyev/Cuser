@@ -1,6 +1,6 @@
 .userList {
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   gap: 10px; /* Kartalar orasidagi masofa */
   max-width: 600px; /* Maksimal kenglik, markazlash uchun */
   padding: 20px; /* Ichki padding */
@@ -16,9 +16,4 @@
   border-radius: 8px;
   background-color: #f9f9f9;
   text-align: center;
-}
-
-.user-card h2 {
-  margin: 0;
-  font-size: 1.2rem;
 }
