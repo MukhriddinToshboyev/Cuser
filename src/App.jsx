@@ -19,6 +19,7 @@ function App() {
   const deleteUser = (id) => {
     setUser(user.filter((user) => user.id !== id));
   };
+
   return (
     <div className="Container">
       <Navbar user={user} />

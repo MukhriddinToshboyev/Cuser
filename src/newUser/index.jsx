@@ -41,7 +41,7 @@ function NewUser() {
               Female
             </label>
           </div>
-          <button className="modalButton">Submit</button>
+          <button className="modal-btn">Submit</button>
         </form>
       </div>
     </div>
