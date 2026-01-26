@@ -1,8 +1,10 @@
 import { useState } from "react";
 import "./style.css";
+import { v4 as uuidv4 } from "uuid";
 
-function NewUser() {
+function NewUser({ addUser }) {
   const [user, setUser] = useState({
+    id: uuidv4(),
     img: "",
     firstName: "",
     lastName: "",
@@ -11,11 +13,16 @@ function NewUser() {
     job: "",
     gender: "",
   });
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    addUser(user);
+  };
+
   return (
     <div className="modalContainer">
       <div className="modal">
         <h2>Create New User</h2>
-        <form className="modalForm">
+        <form onSubmit={handleSubmit} className="modalForm">
           <label>
             <span className="modalText"> Img URL:</span>
             <input
@@ -125,7 +132,9 @@ function NewUser() {
               Female
             </label>
           </div>
-          <button className="modal-btn">Submit</button>
+          <button type="submit" className="modal-btn">
+            Submit
+          </button>
         </form>
       </div>
     </div>

@@ -12,12 +12,14 @@ function App() {
   const deleteUser = (id) => {
     setUser(user.filter((user) => user.id !== id));
   };
-  const Close = (e) => {
-    console.log(e);
-  };
+
   const closeModal = (e) => {
     if (e.target.className === "modalContainer") setShowModal(false);
     if (e.key === "Escape") setShowModal(false);
+  };
+
+  const addUser = (newUser) => {
+    setUser((prev) => [...prev, newUser]);
   };
 
   return (
@@ -27,13 +29,13 @@ function App() {
       className="App"
     >
       <Navbar user={user} />
-      <main className="main">
-        <div className="text">
+      <main className="mainContainer">
+        <div className="mainHeader">
           {user.length === 0 && <h2>No users available.</h2>}
         </div>
         <Users users={user} deleteUser={deleteUser} />
       </main>
-      {showModal && <NewUser />}
+      {showModal && <NewUser addUser={addUser} />}
       <button onClick={() => setShowModal(true)} className="creat-user">
         Create User
       </button>
