@@ -1,4 +1,4 @@
-.newUserContainer {
+.modalContainer {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   justify-content: center;
 }
 
-.newUserForm {
+.modal {
   display: flex;
   flex-direction: column;
   text-align: center;

@@ -2,14 +2,18 @@ import "./style.css";
 
 function NewUser() {
   return (
-    <div className="newUserContainer">
-      <div className="newUserForm">
+    <div className="modalContainer">
+      <div className="modal">
         <h2>Create New User</h2>
         <form>
-          <label>Name:</label>
-          <input type="text" placeholder="Enter name" />
-          <label>Email:</label>
-          <input type="email" placeholder="Enter email" />
+          <label>
+            <span> Name:</span>
+            <input type="text" placeholder="Enter name" />
+          </label>
+          <label>
+            <span> Email:</span>
+            <input type="email" placeholder="Enter email" />
+          </label>
           <button type="submit">Add User</button>
         </form>
       </div>
