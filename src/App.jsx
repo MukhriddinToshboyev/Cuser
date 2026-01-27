@@ -8,7 +8,6 @@ import useLocalStorage from "./hooks/useLocalStorage";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
-
   const [user, setUser] = useLocalStorage("users", []);
 
   const deleteUser = (id) => {

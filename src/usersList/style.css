@@ -12,7 +12,7 @@
 
 .userCard {
   width: 12.5rem;
-  height: 19rem;
+  height: 22rem;
   background: #fff;
   border-radius: 12px;
   padding: 16px;
@@ -21,8 +21,8 @@
 }
 
 .userCard img {
-  width: 8.5rem;
-  height: 8.5rem;
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 10px;
