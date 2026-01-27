@@ -4,10 +4,12 @@ import Navbar from "./navbar";
 import { useState } from "react";
 import Users from "./usersList";
 import NewUser from "./newUser";
+import useLocalStorage from "./hooks/useLocalStorage";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
-  const [user, setUser] = useState([]);
+
+  const [user, setUser] = useLocalStorage("users", []);
 
   const deleteUser = (id) => {
     setUser(user.filter((user) => user.id !== id));
@@ -20,6 +22,7 @@ function App() {
 
   const addUser = (newUser) => {
     setUser((prev) => [...prev, newUser]);
+    setShowModal(false);
   };
 
   return (

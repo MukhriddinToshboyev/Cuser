@@ -4,8 +4,10 @@
   align-content: space-around;
   justify-content: space-between;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  scrollbar-width: none;
   gap: 1.3rem;
   padding: 1.3rem;
+  width: 100%;
 }
 
 .userCard {
