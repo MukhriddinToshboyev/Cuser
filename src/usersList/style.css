@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   align-content: space-around;
-  justify-content: space-between;
+  justify-content: flex-start;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   scrollbar-width: none;
   gap: 1.3rem;
